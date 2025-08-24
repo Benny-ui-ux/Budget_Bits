@@ -7,7 +7,11 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <>
     <h1 className='text-2xl text-red-500 text-center font-bold'>HELLOOOO BENJAMIN MOSELY</h1>
+
+    <h1 className='text-2xl text-red-500 text-center font-bold'>HELLOOOO JODY HOLT</h1>
+</>
   )
 }
 
