@@ -1,17 +1,16 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
+import { SignupForm } from './pages/SignupPage';
+import { Routes, Route, Navigate } from 'react-router-dom';
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-    <h1 className='text-2xl text-red-500 text-center font-bold'>HELLOOOO BENJAMIN MOSELY</h1>
+    
+    <Routes>
+      <Route path="/" element={<Navigate to="/signup" replace />} />
+      <Route path='/signup' element={<SignupForm />} />
+    </Routes>
 
-    <h1 className='text-2xl text-red-500 text-center font-bold'>HELLOOOO JODY HOLT</h1>
-</>
   )
 }
 
