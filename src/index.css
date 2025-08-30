@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
 @import "tailwindcss";
 
 @theme {
+/*Theme Fonts */
+--font-header: "Playwrite DE Grund", cursive;
+
+
+
+
+  /* Theme Colors */
   --color-primary: #406446;
   --color-secondary: #8ACB88;
   --color-tertiary: #011627;

@@ -1,14 +1,18 @@
 import React, { useState } from "react";
-
+import Header from '../components/common/Header.tsx';
 export const SignupForm = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   return (
-    <div className="flex items-center justify-center  min-h-screen bg-primary flex-col ">
-    
+    <>
+   
+
+<div className="flex flex-col items-center justify-center min-h-screen bg-primary">
+     <Header title='Budget Bits' center></Header>
+      <div className='flex flex-1 justifty-center items-center'>
       <div
-        className="  bg-secondary  min-h-100 min-w-200 min-w- p-4  
+        className=" justify-self-center bg-secondary  min-h-100 min-w-200 min-w- p-4  
       rounded shadow-md p-2 border-4 border-tertiary  gap-20"
       >
         <h1 className=" text-5xl font-bold text-center text-white mt-10 shadow-mb">
@@ -31,6 +35,8 @@ export const SignupForm = () => {
 
         </div>
       </div>
+      </div>
     </div>
+    </>
   );
 };
